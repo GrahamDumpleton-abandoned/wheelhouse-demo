@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -x
+
+ls -las .warpdrive/wheelhouse
+
+ls -las .warpdrive/packages
