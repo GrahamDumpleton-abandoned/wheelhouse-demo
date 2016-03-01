@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# If there was a wheelhouse directory then output it as saved artifacts.
+
+echo " -----> Running save-artifacts" 1>&2
+
+if [ -d /opt/warpdrive/.warpdrive/wheelhouse ]; then
+    echo " -----> Found wheelhouse/packages to save" 1>&2
+
+    tar -c -C /opt/warpdrive/.warpdrive -f - wheelhouse packages
+fi
