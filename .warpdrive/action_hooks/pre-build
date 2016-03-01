@@ -5,3 +5,5 @@ set -x
 ls -las .warpdrive/wheelhouse
 
 ls -las .warpdrive/packages
+
+exit 0
